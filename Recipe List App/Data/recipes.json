@@ -1,0 +1,256 @@
+[
+  {
+    "name": "Eggplant Parmesan",
+    "featured": false,
+    "image": "eggplant parmesan",
+    "description": "Aubergines gratinées avec de la chapelure et beaucoup de fromage. Délicieux !",
+    "prepTime": "25 minutes",
+    "cookTime": "35 minutes",
+    "totalTime": "1 heure",
+    "servings": 10,
+    "highlights": [
+      "Végétarien",
+      "Sain",
+      "Nettoyage facile"
+    ],
+    "ingredients": [
+      {"name": "Aubergines, pelées et coupées en tranches fines", "num": 3},
+      {"name": "Œufs", "num": 2},
+      {"name": "Chapelure assaisonnée à l'italienne", "num": 4, "unit": "tasse"},
+      {"name": "Sauce spaghetti", "num": 6, "unit": "tasse"},
+      {"name": "Fromage mozzarella râpé", "num": 2, "unit": "tasse"},
+      {"name": "Fromage parmesan râpé", "num": 1, "denom": 2, "unit": "tasse"},
+      {"name": "Basilic séché", "num": 1, "denom": 2, "unit": "cuillère à café"}
+    ],
+    "directions": [
+      "Préchauffez le four à 175°C (350°F).",
+      "Trempez les tranches d’aubergine dans l'œuf, puis dans la chapelure. Disposez-les en une seule couche sur une plaque à pâtisserie. Faites cuire 5 minutes de chaque côté.",
+      "Dans un plat de cuisson de 23x33 cm, étalez de la sauce spaghetti pour couvrir le fond. Disposez une couche d’aubergines sur la sauce. Saupoudrez de mozzarella et de parmesan. Répétez avec les ingrédients restants, en terminant par les fromages. Saupoudrez de basilic.",
+      "Faites cuire au four préchauffé pendant 35 minutes, ou jusqu'à ce que le dessus soit doré."
+    ]
+  },
+  {
+    "name": "Mushroom Risotto",
+    "featured": true,
+    "image": "mushroom risotto",
+    "description": "Un risotto italien authentique, long à préparer mais tellement délicieux.",
+    "prepTime": "20 minutes",
+    "cookTime": "30 minutes",
+    "totalTime": "50 minutes",
+    "servings": 6,
+    "highlights": [
+      "Crémeux",
+      "Végétarien"
+    ],
+    "ingredients": [
+      {"name": "Bouillon de volaille", "num": 6, "unit": "tasse"},
+      {"name": "Huile d'olive", "num": 3, "unit": "cuillère à soupe"},
+      {"name": "Champignons Portobello", "num": 1, "unit": "livre"},
+      {"name": "Champignons de Paris", "num": 1, "unit": "livre"},
+      {"name": "Échalotes, hachées", "num": 2},
+      {"name": "Riz Arborio", "num": 3, "denom": 2, "unit": "tasse"},
+      {"name": "Vin blanc sec", "num": 1, "denom": 2, "unit": "tasse"},
+      {"name": "Sel de mer", "unit": "À goût"},
+      {"name": "Poivre noir", "unit": "À goût"},
+      {"name": "Ciboulette, finement hachée", "num": 3, "unit": "cuillère à soupe"},
+      {"name": "Beurre", "num": 4, "unit": "cuillère à soupe"},
+      {"name": "Fromage parmesan", "num": 1, "denom": 3, "unit": "tasse"}
+    ],
+    "directions": [
+      "Dans une casserole, chauffez le bouillon à feu doux.",
+      "Chauffez 2 cuillères à soupe d'huile d'olive dans une grande poêle à feu moyen-vif. Ajoutez les champignons et faites cuire jusqu'à ce qu'ils soient tendres, environ 3 minutes. Retirez les champignons et réservez.",
+      "Ajoutez 1 cuillère à soupe d'huile dans la poêle et incorporez les échalotes. Faites cuire 1 minute. Ajoutez le riz et mélangez pour bien l'enrober d'huile, environ 2 minutes. Versez le vin et remuez jusqu'à absorption. Ajoutez le bouillon, 1/2 tasse à la fois, en remuant constamment, jusqu'à ce que le riz soit al dente, environ 15 à 20 minutes.",
+      "Retirez du feu, ajoutez les champignons avec leur jus, le beurre, la ciboulette et le parmesan. Assaisonnez avec le sel et le poivre."
+    ]
+  },
+  {
+    "name": "Couscous Royal",
+    "featured": true,
+    "image": "couscous",
+    "description": "Un plat marocain festif avec de la semoule, des légumes et des viandes variées.",
+    "prepTime": "1 heure",
+    "cookTime": "2 heures",
+    "totalTime": "3 heures",
+    "servings": 8,
+    "highlights": [
+      "Classique marocain",
+      "Riche en saveurs"
+    ],
+    "ingredients": [
+      {"name": "Semoule de couscous", "num": 500, "unit": "g"},
+      {"name": "Poulet", "num": 1, "unit": "kg"},
+      {"name": "Agneau", "num": 500, "unit": "g"},
+      {"name": "Merguez", "num": 500, "unit": "g"},
+      {"name": "Pois chiches, trempés", "num": 200, "unit": "g"},
+      {"name": "Carottes", "num": 4},
+      {"name": "Navets", "num": 4},
+      {"name": "Courgettes", "num": 4},
+      {"name": "Potiron", "num": 300, "unit": "g"},
+      {"name": "Oignons", "num": 2},
+      {"name": "Tomates", "num": 2},
+      {"name": "Huile d'olive", "num": 4, "unit": "cuillère à soupe"},
+      {"name": "Ras el hanout", "num": 2, "unit": "cuillère à café"},
+      {"name": "Safran", "unit": "Quelques filaments"},
+      {"name": "Sel et poivre", "unit": "À goût"}
+    ],
+    "directions": [
+      "Dans une grande marmite, chauffez l'huile d'olive et faites revenir les oignons. Ajoutez le poulet, l'agneau et les épices. Faites dorer quelques minutes.",
+      "Ajoutez les tomates râpées, les pois chiches et couvrez d'eau. Laissez mijoter 1 heure.",
+      "Ajoutez les carottes, les navets et le potiron. Faites cuire 30 minutes de plus.",
+      "Ajoutez les courgettes et laissez cuire encore 20 minutes.",
+      "Préparez la semoule selon les instructions. Servez avec les viandes, légumes et merguez grillées."
+    ]
+  },
+  {
+    "name": "Brik à l'œuf",
+    "featured": false,
+    "image": "Brik",
+    "description": "Un délice tunisien croustillant rempli d'œuf et de thon.",
+    "prepTime": "10 minutes",
+    "cookTime": "10 minutes",
+    "totalTime": "20 minutes",
+    "servings": 6,
+    "highlights": [
+      "Rapide",
+      "Traditionnel"
+    ],
+    "ingredients": [
+      {"name": "Feuilles de brik", "num": 6},
+      {"name": "Œufs", "num": 6},
+      {"name": "Thon", "num": 150, "unit": "g"},
+      {"name": "Persil frais, haché", "num": 2, "unit": "cuillère à soupe"},
+      {"name": "Sel et poivre", "unit": "À goût"},
+      {"name": "Huile pour friture", "unit": "Quantité suffisante"}
+    ],
+    "directions": [
+      "Chauffez l'huile dans une poêle profonde.",
+      "Posez une feuille de brik sur une assiette. Déposez un peu de thon, une pincée de persil et cassez un œuf au centre. Salez et poivrez.",
+      "Pliez la feuille en deux pour enfermer la garniture.",
+      "Faites frire jusqu'à ce que la feuille soit dorée et croustillante, environ 2 minutes de chaque côté.",
+      "Égouttez sur du papier absorbant et servez chaud."
+    ]
+  },
+  {
+      "name": "Tajine de poulet au citron confit et olives",
+      "featured": true,
+      "image": "tajine",
+      "description": "Un plat marocain emblématique aux saveurs riches et parfumées.",
+      "prepTime": "20 minutes",
+      "cookTime": "1 heure 20 minutes",
+      "totalTime": "1 heure 40 minutes",
+      "servings": 6,
+      "highlights": [
+        "Traditionnel marocain",
+        "Parfumé"
+      ],
+      "ingredients": [
+        {"name": "Poulet, coupé en morceaux", "num": 1},
+        {"name": "Citrons confits", "num": 2},
+        {"name": "Olives vertes", "num": 200, "unit": "g"},
+        {"name": "Oignons, hachés", "num": 2},
+        {"name": "Ail, haché", "num": 2, "unit": "gousse"},
+        {"name": "Persil frais, haché", "num": 2, "unit": "cuillère à soupe"},
+        {"name": "Coriandre fraîche, hachée", "num": 2, "unit": "cuillère à soupe"},
+        {"name": "Huile d'olive", "num": 4, "unit": "cuillère à soupe"},
+        {"name": "Curcuma", "num": 1, "denom": 2, "unit": "cuillère à café"},
+        {"name": "Gingembre moulu", "num": 1, "denom": 2, "unit": "cuillère à café"},
+        {"name": "Sel et poivre", "unit": "À goût"}
+      ],
+      "directions": [
+        "Dans un grand tajine ou une cocotte, faites chauffer l'huile d'olive. Faites revenir les oignons et l'ail jusqu'à ce qu'ils soient tendres.",
+        "Ajoutez les morceaux de poulet, le curcuma, le gingembre, le sel et le poivre. Faites-les dorer quelques minutes.",
+        "Ajoutez les citrons confits coupés en quartiers, les olives, le persil et la coriandre. Mélangez bien.",
+        "Ajoutez un verre d'eau, couvrez et laissez mijoter à feu doux pendant 1 heure 20 minutes, en remuant de temps en temps. Servez chaud avec du pain ou du riz."
+      ]
+    },
+    {
+      "name": "Pastilla au poulet et amandes",
+      "featured": true,
+      "image": "pastilla poulet",
+      "description": "Un mélange sucré-salé irrésistible dans une pâte croustillante, un classique marocain.",
+      "prepTime": "1 heure",
+      "cookTime": "45 minutes",
+      "totalTime": "1 heure 45 minutes",
+      "servings": 8,
+      "highlights": [
+        "Festif",
+        "Croustillant et fondant"
+      ],
+      "ingredients": [
+        {"name": "Feuilles de brick", "num": 10},
+        {"name": "Poulet, coupé en morceaux", "num": 1},
+        {"name": "Amandes, grillées et hachées", "num": 200, "unit": "g"},
+        {"name": "Oignons, hachés", "num": 3},
+        {"name": "Œufs", "num": 4},
+        {"name": "Persil frais, haché", "num": 2, "unit": "cuillère à soupe"},
+        {"name": "Cannelle", "num": 1, "unit": "cuillère à café"},
+        {"name": "Beurre fondu", "num": 100, "unit": "g"},
+        {"name": "Sucre glace", "num": 2, "unit": "cuillère à soupe"},
+        {"name": "Sel et poivre", "unit": "À goût"}
+      ],
+      "directions": [
+        "Faites cuire le poulet avec les oignons, le persil, la cannelle, le sel et le poivre dans une grande casserole. Ajoutez un peu d'eau et laissez mijoter jusqu'à ce que le poulet soit tendre.",
+        "Retirez le poulet et désossez-le. Hachez la viande et réservez. Réduisez le jus de cuisson, puis ajoutez les œufs en remuant pour obtenir une texture crémeuse.",
+        "Dans un grand plat à tarte, disposez plusieurs feuilles de brick en les superposant et en les badigeonnant de beurre fondu. Ajoutez une couche de poulet, une couche de mélange aux œufs, puis une couche d'amandes. Repliez les feuilles de brick et ajoutez-en d'autres pour bien couvrir.",
+        "Faites cuire au four à 180°C (350°F) jusqu'à ce que la pastilla soit dorée. Saupoudrez de sucre glace et de cannelle avant de servir."
+      ]
+    },
+    {
+      "name": "Chakchouka",
+      "featured": false,
+      "image": "chakchouka",
+      "description": "Une spécialité tunisienne à base de légumes et d'œufs, parfaite pour un repas léger.",
+      "prepTime": "15 minutes",
+      "cookTime": "30 minutes",
+      "totalTime": "45 minutes",
+      "servings": 4,
+      "highlights": [
+        "Facile",
+        "Végétarien"
+      ],
+      "ingredients": [
+        {"name": "Poivrons rouges et verts, coupés en lanières", "num": 4},
+        {"name": "Tomates, pelées et hachées", "num": 4},
+        {"name": "Oignons, hachés", "num": 2},
+        {"name": "Ail, haché", "num": 2, "unit": "gousse"},
+        {"name": "Œufs", "num": 4},
+        {"name": "Huile d'olive", "num": 3, "unit": "cuillère à soupe"},
+        {"name": "Paprika", "num": 1, "unit": "cuillère à café"},
+        {"name": "Cumin", "num": 1, "unit": "cuillère à café"},
+        {"name": "Sel et poivre", "unit": "À goût"}
+      ],
+      "directions": [
+        "Faites chauffer l'huile d'olive dans une poêle. Ajoutez les oignons et l'ail, faites revenir jusqu'à ce qu'ils soient tendres.",
+        "Ajoutez les poivrons et faites cuire 10 minutes. Incorporez les tomates, le paprika, le cumin, le sel et le poivre. Laissez mijoter 15 minutes.",
+        "Faites des petits creux dans la sauce et cassez les œufs directement dedans. Couvrez et laissez cuire jusqu'à ce que les œufs soient pris.",
+        "Servez chaud avec du pain frais."
+      ]
+    },
+    {
+      "name": "Makroud",
+      "featured": false,
+      "image": "makroud",
+      "description": "Une pâtisserie tunisienne délicieuse, à base de semoule et de pâte de dattes.",
+      "prepTime": "40 minutes",
+      "cookTime": "20 minutes",
+      "totalTime": "1 heure",
+      "servings": 20,
+      "highlights": [
+        "Traditionnel",
+        "Sucré"
+      ],
+      "ingredients": [
+        {"name": "Semoule fine", "num": 500, "unit": "g"},
+        {"name": "Pâte de dattes", "num": 250, "unit": "g"},
+        {"name": "Beurre fondu", "num": 150, "unit": "g"},
+        {"name": "Huile pour friture", "unit": "Quantité suffisante"},
+        {"name": "Eau de fleur d'oranger", "num": 2, "unit": "cuillère à soupe"},
+        {"name": "Miel", "num": 300, "unit": "g"}
+      ],
+      "directions": [
+        "Mélangez la semoule avec le beurre fondu et l'eau de fleur d'oranger. Ajoutez un peu d'eau pour obtenir une pâte souple.",
+        "Étalez la pâte et garnissez-la de pâte de dattes. Roulez pour former un boudin, puis découpez en losanges.",
+        "Faites frire les makrouds dans l'huile chaude jusqu'à ce qu'ils soient dorés. Trempez-les immédiatement dans du miel chauffé. Égouttez et laissez refroidir."
+      ]
+    }
+]
