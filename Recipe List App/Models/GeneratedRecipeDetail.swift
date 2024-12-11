@@ -42,3 +42,9 @@ struct IngredientDetail: Identifiable, Decodable {
     let name: String
     let amount: String
 }
+
+struct Step: Codable, Identifiable {
+    let id = UUID()
+    let number: Int
+    let step: String
+}

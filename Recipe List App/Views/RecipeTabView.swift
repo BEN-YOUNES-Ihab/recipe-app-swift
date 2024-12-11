@@ -1,17 +1,18 @@
-
-
 import SwiftUI
 
 struct RecipeTabView: View {
     @AppStorage("isDarkMode") private var isDarkMode: Bool = false
+    @StateObject private var favoritesViewModel = FavoriteRecipesViewModel()
+    @StateObject private var recipeModel = RecipeModel()
     
     var body: some View {
         TabView {
-            RecipeFeaturedView()
+            
+            FavoritesView()
                 .tabItem {
                     VStack {
-                        Image(systemName: "star.fill")
-                        Text("Featured")
+                        Image(systemName: "heart.fill")
+                        Text("Favorites")
                     }
                 }
             
@@ -38,6 +39,7 @@ struct RecipeTabView: View {
                         Text("Search")
                     }
                 }
+
             
             SettingsView()
                 .tabItem {
@@ -47,7 +49,8 @@ struct RecipeTabView: View {
                     }
                 }
         }
-        .environmentObject(RecipeModel())
+        .environmentObject(recipeModel)
+        .environmentObject(favoritesViewModel)
         .preferredColorScheme(isDarkMode ? .dark : .light)
     }
 }
@@ -66,9 +69,6 @@ struct SettingsView: View {
         }
     }
 }
-
-// Vue pour générer des recettes
-
 
 struct RecipeTabView_Previews: PreviewProvider {
     static var previews: some View {

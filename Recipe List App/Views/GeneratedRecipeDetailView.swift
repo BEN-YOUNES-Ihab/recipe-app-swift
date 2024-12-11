@@ -1,10 +1,13 @@
 import SwiftUI
 
+
 struct GeneratedRecipeDetailView: View {
     let recipeId: Int
+    @EnvironmentObject private var favoritesViewModel: FavoriteRecipesViewModel
     @State private var recipeDetail: GeneratedRecipeDetail?
     @State private var isLoading = true
     @State private var errorMessage: String?
+    @State private var isFavorite = false
     
     var body: some View {
         Group {
@@ -16,7 +19,6 @@ struct GeneratedRecipeDetailView: View {
             } else if let recipe = recipeDetail {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 20) {
-                        // Image de la recette
                         AsyncImage(url: URL(string: recipe.image)) { image in
                             image
                                 .resizable()
@@ -27,11 +29,26 @@ struct GeneratedRecipeDetailView: View {
                             ProgressView()
                         }
                         
-                        // Titre de la recette
-                        Text(recipe.title)
-                            .font(.system(size: 28, weight: .bold))
+                        HStack {
+                            Text(recipe.title)
+                                .font(.system(size: 28, weight: .bold))
+                            
+                            Spacer()
+                            
+                            Button(action: {
+                                if isFavorite {
+                                    favoritesViewModel.removeFromFavorites(recipe)
+                                } else {
+                                    favoritesViewModel.addToFavorites(recipe)
+                                }
+                                isFavorite.toggle()
+                            }) {
+                                Image(systemName: isFavorite ? "heart.fill" : "heart")
+                                    .foregroundColor(.red)
+                                    .imageScale(.large)
+                            }
+                        }
                         
-                        // Temps de préparation et portions
                         HStack {
                             if let readyInMinutes = recipe.readyInMinutes {
                                 Text("Preparation Time: \(readyInMinutes) mins")
@@ -44,7 +61,6 @@ struct GeneratedRecipeDetailView: View {
                             }
                         }
                         
-                        // Ingrédients
                         Text("Ingredients")
                             .font(.title2)
                             .bold()
@@ -52,12 +68,10 @@ struct GeneratedRecipeDetailView: View {
                             Text("• \(ingredient.original)")
                         }
                         
-                        // Instructions
                         Text("Instructions")
                             .font(.title2)
                             .bold()
                         
-                        // Utiliser soit instructions, soit analyzedInstructions
                         if let instructions = recipe.instructions {
                             Text(instructions)
                         } else if let analyzedInstructions = recipe.analyzedInstructions, !analyzedInstructions.isEmpty {
@@ -77,11 +91,18 @@ struct GeneratedRecipeDetailView: View {
         .navigationBarTitleDisplayMode(.inline)
         .onAppear {
             fetchRecipeDetails()
+            updateFavoriteStatus()
+        }
+    }
+    
+    private func updateFavoriteStatus() {
+        if let recipe = recipeDetail {
+            isFavorite = favoritesViewModel.isFavorite(recipe)
         }
     }
     
     func fetchRecipeDetails() {
-        let apiKey = "b518c9ab22f94eaaabe11880a2182a9d"
+        let apiKey = "8ee679c936ea48eab97da024f396f433"
         let urlString = "https://api.spoonacular.com/recipes/\(recipeId)/information?apiKey=\(apiKey)"
         
         guard let url = URL(string: urlString) else {
@@ -92,7 +113,10 @@ struct GeneratedRecipeDetailView: View {
         
         URLSession.shared.dataTask(with: url) { (data: Data?, response: URLResponse?, error: Error?) in
             DispatchQueue.main.async {
-                defer { isLoading = false }
+                defer {
+                    isLoading = false
+                    updateFavoriteStatus()
+                }
                 
                 if let error = error {
                     print("Error fetching recipe details: \(error)")
@@ -111,6 +135,7 @@ struct GeneratedRecipeDetailView: View {
                     let recipeInfo = try decoder.decode(GeneratedRecipeDetail.self, from: data)
                     self.recipeDetail = recipeInfo
                     print("Decoded recipe: \(recipeInfo.title)")
+                    updateFavoriteStatus()
                 } catch {
                     print("Error decoding recipe details: \(error)")
                     errorMessage = "Failed to decode recipe details: \(error.localizedDescription)"
