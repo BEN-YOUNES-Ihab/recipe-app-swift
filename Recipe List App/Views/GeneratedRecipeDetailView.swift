@@ -144,7 +144,7 @@ struct GeneratedRecipeDetailView: View {
         }.resume()
     }
 }
-
+//test
 #Preview {
     NavigationView {
         GeneratedRecipeDetailView(recipeId: 1)
